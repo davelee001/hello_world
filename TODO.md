@@ -6,3 +6,8 @@
 - [ ] Day to day contributions
 - [ ] Reminder every now and then
 - [ ] Write integration tests
+
+- [ ] Say hello
+- [ ] Reset the program
+- [ ] Close and rest
+- [ ] Repeat
