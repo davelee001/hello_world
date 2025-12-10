@@ -1,8 +1,8 @@
 [package]
 name = "hello_world"
 edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
-# license = ""           # e.g., "MIT", "GPL", "Apache 2.0"
-# authors = ["..."]      # e.g., ["Joe Smith (joesmith@noemail.com)", "John Snow (johnsnow@noemail.com)"]
+license = "MIT"
+authors = ["Bridget", "David"]
 
 [dependencies]
 
@@ -33,4 +33,17 @@ hello_world = "0x0"
 # The dev-addresses section allows overwriting named addresses for the `--test`
 # and `--dev` modes.
 # alice = "0xB0B"
+
+
+/// The module `hello_world` under named address `hello_world`.
+/// The named address is set in the `Move.toml`.
+module hello_world::hello_world; 
+
+// Imports the `String` type from the Standard Library
+use std::string::String;
+
+/// Returns the "Hello World!" as a `String`.
+public fun hello_world(): String {
+    b"Hello, World!".to_string()
+}
 
