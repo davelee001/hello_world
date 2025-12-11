@@ -1,0 +1,50 @@
+:root {
+  --bg: #0b0f14;
+  --text: #e2e8f0;
+  --glow-color: #39ff14;
+
+  /* One letter glows at a time; tweak these to control speed */
+  --duration: 2.4s;    /* full cycle time for one letter */
+  --delay-step: 0.2s;  /* spacing between letters' start times */
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #0b0f14;
+  color: var(--text);
+  font-family: Segoe UI, system-ui, Roboto, sans-serif;
+}
+
+#title {
+  font-size: clamp(32px, 8vw, 96px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: pre;
+}
+
+#title span {
+  display: inline-block;
+  animation: glow var(--duration) linear infinite;
+  animation-delay: calc(var(--i) * var(--delay-step));
+  will-change: filter, text-shadow, color;
+}
+
+/* Only glow briefly within each letter's window */
+@keyframes glow {
+  0%, 40%, 100% {
+    color: var(--text);
+    text-shadow: none;
+    filter: brightness(1);
+  }
+  50% {
+    color: #fff;
+    text-shadow:
+      0 0 6px var(--glow-color),
+      0 0 12px var(--glow-color),
+      0 0 24px var(--glow-color);
+    filter: brightness(1.2);
+  }
+}
