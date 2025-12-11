@@ -16,11 +16,25 @@ body {
   font-family: Segoe UI, system-ui, Roboto, sans-serif;
 }
 
+.container {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: clamp(14px, 2.5vw, 24px);
+  color: #94a3b8;
+  margin: 0 0 16px 0;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
 #title {
   font-size: clamp(32px, 8vw, 96px);
   font-weight: 800;
   letter-spacing: 0.04em;
   white-space: pre;
+  margin: 0;
 }
 
 #title span {
