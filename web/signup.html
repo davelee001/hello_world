@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <div style="display:flex;align-items:center;justify-content:center;gap:1em;">
-            <h1 style="margin:0;">Login</h1>
-            <a href="signup.html" style="font-size:1em;text-decoration:none;color:#4f46e5;">Don't have an account? <strong>Sign Up</strong></a>
-        </div>
-    <form class="login-form" style="max-width:350px;margin:auto;padding:2em;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);background:#fff;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:1em;">
+      <h1 style="margin:0;">Sign Up</h1>
+      <a href="welcome.html" style="font-size:1em;text-decoration:none;color:#4f46e5;">Already have an account? <strong>Login</strong></a>
+    </div>
+    <form class="signup-form" style="max-width:350px;margin:auto;padding:2em;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);background:#fff;">
         <label for="username" style="display:block;margin-bottom:0.5em;font-weight:bold;">Username</label>
         <input type="text" id="username" name="username" required style="width:100%;padding:0.5em;margin-bottom:1em;border:1px solid #ccc;border-radius:4px;">
+
+        <label for="email" style="display:block;margin-bottom:0.5em;font-weight:bold;">Email</label>
+        <input type="email" id="email" name="email" required style="width:100%;padding:0.5em;margin-bottom:1em;border:1px solid #ccc;border-radius:4px;">
 
         <label for="password" style="display:block;margin-bottom:0.5em;font-weight:bold;">Password</label>
         <input type="password" id="password" name="password" required style="width:100%;padding:0.5em;margin-bottom:1em;border:1px solid #ccc;border-radius:4px;">
 
-        <button type="submit" style="width:100%;padding:0.7em;background:#4f46e5;color:#fff;border:none;border-radius:4px;font-size:1em;cursor:pointer;">Login</button>
+        <button type="submit" style="width:100%;padding:0.7em;background:#4f46e5;color:#fff;border:none;border-radius:4px;font-size:1em;cursor:pointer;">Sign Up</button>
     </form>
     <div style="text-align:center;margin-top:2em;">
         <a href="index.html" style="font-size:1em;text-decoration:none;display:inline-block;">&larr; Back to Home</a>
