@@ -14,7 +14,7 @@ Experience a glowing, animated section on the web page that celebrates SUI's inn
 Open `web/index.html` in your browser to see the tribute in action!
 
 ## Navigation
-The main page now includes a link to a Welcome page. Click "Welcome →" to visit the welcome screen, which now features a login form (username and password), a "Don't have an account? Sign Up" link next to Login, and a link back to the home page.
+The main page now includes a link to a Welcome page. Click "Welcome →" to visit the welcome screen, which now features a login form (username and password), a "Don't have an account? Sign Up" link below the login form, and a link back to the home page.
 
 ## Sign Up Page
 Clicking the "Sign Up" link on the login page takes you to a dedicated signup page (`web/signup.html`). The signup page allows new users to register with a username, email, and password, and provides a link back to the login page or home page.
