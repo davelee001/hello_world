@@ -60,3 +60,78 @@ body {
     text-shadow: none;
   }
 }
+
+/* SUI Tribute Styles */
+.sui-tribute {
+  margin-top: 3rem;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(57, 255, 20, 0.05) 0%, rgba(57, 255, 20, 0.02) 100%);
+  border: 1px solid rgba(57, 255, 20, 0.1);
+  backdrop-filter: blur(10px);
+  animation: subtleGlow 4s ease-in-out infinite alternate;
+}
+
+.sui-title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 700;
+  color: #39ff14;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+  animation: titlePulse 3s ease-in-out infinite;
+}
+
+.sui-description {
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin: 0 0 1.2rem 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.sui-motto {
+  font-size: clamp(16px, 2.8vw, 22px);
+  font-style: italic;
+  color: #39ff14;
+  margin: 2rem 0 0 0;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: center;
+  opacity: 0.85;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+@keyframes subtleGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(57, 255, 20, 0.15);
+  }
+}
+
+@keyframes titlePulse {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(57, 255, 20, 0.5), 0 0 40px rgba(57, 255, 20, 0.2);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sui-tribute {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .sui-description {
+    text-align: center;
+  }
+}
