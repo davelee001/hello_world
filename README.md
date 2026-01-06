@@ -13,6 +13,9 @@ Experience a glowing, animated section on the web page that celebrates SUI's inn
 
 Open `web/index.html` in your browser to see the tribute in action!
 
+## Navigation
+The main page now includes a link to a Welcome page. Click "Welcome →" to visit the welcome screen, which features a friendly greeting and a link back to the home page.
+
 ---
 
 ## TODO
